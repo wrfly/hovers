@@ -10,9 +10,9 @@ import (
 )
 
 func main() {
-	PROXY_ADDR := flag.String("socks5", "127.0.0.1:1080", "socks5 proxy")
-	verbose := flag.Bool("v", false, "verbose")
-	addr := flag.String("p", "8080", "proxy listen port")
+	PROXY_ADDR := flag.String("socks5", "127.0.0.1:1080", "socks5 proxy `address`")
+	verbose := flag.Bool("v", true, "verbose")
+	addr := flag.String("p", "8080", "proxy listen `port`")
 	flag.Parse()
 
 	// create a socks5 dialer
